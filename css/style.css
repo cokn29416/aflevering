@@ -1,0 +1,124 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+/*Header start*/
+header{
+  position: sticky;
+  top: 0;
+  z-index: 9999;
+  background-color: #323232;
+  height: 100px;
+}
+
+.logo{
+  text-align: center;
+  position: relative;
+  top: -100px;
+}
+
+.logo img{
+  max-height: auto;
+  width: 7%;
+}
+
+ul{
+  list-style: none;
+  text-align: center;
+}
+
+li{
+  display: inline-block;
+  margin: 0 5px;
+  margin-top: 20px;
+}
+
+a{
+  color: white;
+  text-decoration: none;
+  line-height: 70px;
+  font-size: 15px;
+  padding: 8px 20px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.h a:hover{
+  color: #6bb098;
+  cursor: pointer;
+}
+
+.v a:hover{
+  color: #6bb098;
+  cursor: pointer;
+}
+
+.h{
+  text-align: left;
+  position: relative;
+  bottom: -1px;
+  right: -350px;
+}
+
+.v{
+  text-align: right;
+  position: relative;
+  top: -195px;
+  left: -330px;
+}
+
+/*Header slut*/
+
+/* Portfolie start*/
+#portfolie{
+  text-align: center;
+  margin-top: 50px;
+}
+/* Portfolie slut*/
+
+/* About start*/
+#about{
+  background-color: #6bb098;
+  margin-bottom: 100px;
+}
+
+.person{
+  margin-top: 100px;
+}
+
+.person img{
+  max-height: auto;
+  width: 30%;
+  margin-left: 100px;
+  margin-top: 100px;s
+}
+
+.name{
+  color: white;
+  font-size: 40px;
+  font-weight: lighter;
+  float: right;
+  position: relative;
+  right: 600px;
+  top: -290px;
+}
+
+.title{
+  color: #4a7664;
+  font-weight: lighter;
+  float: right;
+  position: relative;
+  right: 257px;
+  top: -240px;
+}
+
+.about{
+  color: white;
+  position: relative;
+  left: 554px;
+  top: -200px;
+}
+/* About slut */
