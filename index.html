@@ -10,20 +10,24 @@
   <!-- Header Start-->
     <header>
       <nav>
-        <ul class="h">
-          <li><a href="#portfolie">Portfolie</a></li>
-          <li><a href="#about">About</a></li>
-        </ul>
-      </nav>
+        <ul>
+          <li class="h">
+            <a href="#portfolie">Portfolie</a>
+          </li>
+          <li class="h">
+            <a href="#about">About</a>
+          </li>
 
         <div class="logo">
           <img src="img/logo.png" alt="">
         </div>
 
-      <nav>
-        <ul class="v">
-          <li><a href="#blog">Blog</a></li>
-          <li><a href="#git">Get in touch</a></li>
+          <li class="v">
+            <a href="#blog">Blog</a>
+          </li>
+          <li class="v">
+            <a href="#git">Get in touch</a>
+          </li>
         </ul>
       </nav>
     </header>
@@ -31,7 +35,50 @@
 
   <!-- Portfolie start -->
   <section id="portfolie">
-    <img src="img/portfolie.png" alt="">
+    <div class="slider">
+      <div class="slides">
+        <!--radio buttons start-->
+        <input type="radio" name="radio-btn" id="radio1">
+        <input type="radio" name="radio-btn" id="radio2">
+        <input type="radio" name="radio-btn" id="radio3">
+        <input type="radio" name="radio-btn" id="radio4">
+        <input type="radio" name="radio-btn" id="radio5">
+        <input type="radio" name="radio-btn" id="radio6">
+        <!--radio buttons end-->
+        <!--slide images start-->
+        <div class="slide first">
+          <img class="img1" src="img/portfolie.png" alt="">
+        </div>
+        <div class="slide">
+          <img class="img2" src="img/portfolie.png" alt="">
+        </div>
+        <div class="slide">
+          <img class="img3" src="img/portfolie.png" alt="">
+        </div>
+        <div class="slide">
+          <img class="img4" src="img/portfolie.png" alt="">
+        </div>
+        <div class="slide">
+          <img class="img5" src="img/portfolie.png" alt="">
+        </div>
+        <div class="slide">
+          <img class="img6" src="img/portfolie.png" alt="">
+        </div>
+        <!--Overlay slideshow start-->
+        <!--Overlay slideshow end-->
+        <!--slide images end-->
+      </div>
+
+      <!--manual navigation start-->
+      <div class="navigation-manual">
+        <label for="radio1" class="manual-btn" onclick="count();"></label>
+        <label for="radio2" class="manual-btn" onclick="count();"></label>
+        <label for="radio3" class="manual-btn" onclick="count();"></label>
+        <label for="radio4" class="manual-btn" onclick="count();"></label>
+        <label for="radio5" class="manual-btn" onclick="count();"></label>
+        <label for="radio6" class="manual-btn" onclick="count();"></label>
+      </div>
+    </div>
   </section>
   <!-- Portfolie slut -->
 
@@ -50,8 +97,28 @@
   </section>
 
   <section id="git">
-    
+    <h1 class="git">Get In touch</h1>
+    <p class="get">In order to get in touch use the contact form below:</p>
+    <form onsubmit="return false">
+      <input type="text" placeholder="Name (Required)" id="name" required></input>
+      <br>
+      <input type="email" placeholder="Email (Required)" id="email" required></input>
+      <br>
+      <input type="text" placeholder="Subject" id="subject"></input>
+      <br>
+      <textarea placeholder="Write your message here..."id="question" rows="4"></textarea>
+      <br><br>
+      <button onclick="sendContact();" id="button">SEND</button>
+    </form>
+
+    <p class="text">LOREM IPSUM DOLOR: sit amet, consectetur adipisicing elit,<br>
+      sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p><br>
+
+    <p class="street">Elm st. 14/05 Lost City</p><br>
+    <p class="number">+ 3328 331 86 35</p><br>
+    <p class="email">info@lorem.com</p>
   </section>
 
+  <footer></footer>
   </body>
 </html>
